@@ -1,0 +1,80 @@
+.page {
+    &__services {
+    }
+}
+.services {
+    &__title {
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    &__subheading {
+        text-align: center;
+        margin-bottom: 58px;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 0 15px;
+    }
+
+    &__item {
+        position: relative;
+        padding: 53px 23px 46px;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        background: #fff1f9;
+        border-radius: 8px;
+    }
+    &__label {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 212%;
+        text-align: center;
+        color: #56597a;
+    }
+    &__image {
+        text-align: center;
+        img {
+            max-width: 100%;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__text {
+        font-family: "Proxima Nova";
+
+        font-size: 16px;
+        line-height: 150%;
+
+        text-align: center;
+
+        color: #919299;
+        flex: 1 1 auto;
+    }
+
+    &__wrap-more {
+    }
+
+    &__more {
+    }
+}
+.container {
+}
+.title {
+}
+.subheading {
+}
+.third {
+    &__wrap-more {
+    }
+
+    &__more {
+    }
+}

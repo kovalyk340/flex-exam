@@ -1,0 +1,33 @@
+.wrapper {
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: content-box;
+}
+.subheading {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 132%;
+
+  color: #56597a;
+}
+.title {
+  font-family: "Circular";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 143%px;
+
+  color: #f78cb6;
+}
+.text {
+  font-family: "Proxima Nova";
+
+  font-size: 20px;
+  line-height: 160%;
+
+  letter-spacing: 0.02em;
+
+  color: #919299;
+}

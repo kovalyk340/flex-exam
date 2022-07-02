@@ -1,0 +1,56 @@
+.header {
+    padding-top: 55px;
+    margin-bottom: 128px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+    }
+
+    &__logo {
+        img {
+            width: 106px;
+            height: 30px;
+        }
+    }
+
+    &__nav {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: "";
+
+            width: 24px;
+            height: 24px;
+            background: url("./../img/Menu.svg") 0 0 / contain no-repeat;
+
+            position: absolute;
+            right: 0;
+            top: 3px;
+        }
+    }
+
+    &__point {
+        margin-right: 71px;
+    }
+
+    &__ref {
+        font-family: "Circular";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #aaaaab;
+
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #56597a;
+        }
+    }
+}

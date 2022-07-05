@@ -7,7 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Mirage</title>
+
+    <style>
+        .header__logo {
+            color: #000;
+        }
+
+        a {
+            color: red;
+        }
+
+        a {
+            color: blue
+        }
+
+        .start__list {}
+
+        .start__list li {
+            10+10
+        }
+
+        .start__item:hover {}
+
+        .start__image img {}
+
+        #tester {}
+    </style>
 </head>
+
+<!-- Каскадность (приоритет селекторов) -->
+<!-- тег 1 -->
+<!-- класс 10 -->
+<!-- id 100 -->
+<!-- inline 1000 -->
+<!-- !important ^^^ -->
 
 <body>
     <div class="wrapper">
@@ -53,7 +86,9 @@
                                 Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings, business processes,
                             </p>
                             <div class="start__wrap-button button">
-                                <button type="button" class="start__button"><span>Get started</span></button>
+                                <button type="button" class="start__button">
+                                    <a href="#" class="start__link">Get started</a>
+                                </button>
                             </div>
                         </div>
                         <div class="start__image">
@@ -70,7 +105,7 @@
                     <div class="services__row">
                         <div class="services__column">
                             <div class="services__item">
-                                <div class="services__image">
+                                <div class="services__image ">
                                     <img src="./img/qube.png" alt="3d model">
                                 </div>
                                 <h3 class="services__label">Design</h3>
@@ -111,14 +146,15 @@
                                 </div>
                                 <h3 class="services__label">Illustration</h3>
                                 <p class="services__text">a plan or drawing produced to show the look and function</p>
-                                <div class="third__wrap-more">
-                                    <a href="#" class="third__more">Learn more</a>
+                                <div class="services__wrap-more">
+                                    <a href="#" class="services__more">Learn more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            1
         </main>
 
     </div>

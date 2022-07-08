@@ -1,11 +1,10 @@
 .header {
-    padding-top: 55px;
-    margin-bottom: 128px;
     &__row {
+        padding-top: 55px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 30px;
+        margin-bottom: 128px;
     }
 
     &__logo {
@@ -51,6 +50,46 @@
 
         &:hover {
             color: #56597a;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        &__row {
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__logo {
+            text-align: center;
+            margin-bottom: 25px;
+            &::after {
+                content: "";
+
+                width: 24px;
+                height: 24px;
+                background: url("./../img/Menu.svg") 0 0 / contain no-repeat;
+
+                position: absolute;
+                right: 0;
+                top: 3px;
+            }
+        }
+        &__nav {
+            margin-bottom: 10px;
+        }
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            &::after {
+                content: none;
+            }
+        }
+        &__point {
+            margin: 0 auto;
+            margin-right: 10px;
+            flex: 0 1 10%;
+            padding: 25px;
         }
     }
 }

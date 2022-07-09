@@ -277,7 +277,6 @@ body {
 
 @media (max-width: 568px) {
   .start__row {
-    margin-left: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -285,19 +284,53 @@ body {
             justify-content: center;
   }
   .start__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 470px;
+            flex: 0 0 470px;
     margin-bottom: 30px;
+    padding: 0 30px;
   }
   .start__body {
-    padding: 0;
     margin-bottom: 20px;
     text-align: left;
   }
   .start__text {
-    text-align: left;
-    width: 400px;
+    max-width: 400px;
+    font-size: 24px;
   }
-  .start__wrap-send {
-    text-align: left;
+}
+
+@media (max-width: 375px) {
+  .start__title {
+    text-align: center;
+    padding-left: 5px;
+    position: relative;
+  }
+  .start__title::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 3px;
+    background: url("./../img/underline.svg") 0 0/contain no-repeat;
+    left: 12%;
+    top: 20px;
+  }
+  .start__heading {
+    text-align: center;
+  }
+  .start__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 440px;
+            flex: 0 0 440px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+  .start__text {
+    max-width: 380px;
+    padding-left: 5%;
+    font-size: 24px;
+  }
+  .start__wrap-button {
     margin: 0 auto;
   }
 }

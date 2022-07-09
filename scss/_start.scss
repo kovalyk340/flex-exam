@@ -145,25 +145,59 @@
 @media (max-width: 568px) {
   .start {
     &__row {
-      margin-left: 0;
       flex-wrap: wrap;
       justify-content: center;
     }
     &__image {
+      flex: 0 0 470px;
       margin-bottom: 30px;
+      padding: 0 30px;
     }
     &__body {
-      padding: 0;
       margin-bottom: 20px;
       text-align: left;
     }
 
     &__text {
-      text-align: left;
-      width: 400px;
+      max-width: 400px;
+      font-size: 24px;
     }
-    &__wrap-send {
-      text-align: left;
+  }
+}
+@media (max-width: 375px) {
+  .start {
+    &__title {
+      text-align: center;
+      padding-left: 5px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+
+        width: 36px;
+        height: 3px;
+        background: url("./../img/underline.svg") 0 0 / contain no-repeat;
+
+        left: 12%;
+        top: 20px;
+      }
+    }
+
+    &__heading {
+      text-align: center;
+    }
+    &__image {
+      flex: 0 0 440px;
+      margin-bottom: 30px;
+      padding: 0 30px;
+    }
+
+    &__text {
+      max-width: 380px;
+      padding-left: 5%;
+      font-size: 24px;
+    }
+    &__wrap-button {
       margin: 0 auto;
     }
   }

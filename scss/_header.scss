@@ -63,6 +63,7 @@
         &__logo {
             text-align: center;
             margin-bottom: 25px;
+
             &::after {
                 content: "";
 
@@ -71,8 +72,8 @@
                 background: url("./../img/Menu.svg") 0 0 / contain no-repeat;
 
                 position: absolute;
-                right: 0;
-                top: 3px;
+                right: 30px;
+                top: 15px;
             }
         }
         &__nav {

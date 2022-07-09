@@ -90,6 +90,8 @@
         flex: 1 1 auto;
         margin-bottom: 32px;
         transition: all 0.3s ease 0s;
+
+        flex: 1 1 auto;
     }
 
     &__wrap-more {
@@ -135,6 +137,57 @@
             border-bottom: 7px solid transparent;
 
             transition: all 0.3s ease 0s;
+        }
+    }
+}
+@media (max-width: 1144px) {
+    .services {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -30px -15px;
+        }
+
+        &__column {
+            flex: 0 1 34%;
+            padding: 20px;
+
+            // 20% - 5 карточек
+            // 21% - 25% - 4 карточки
+            // 26% - 33.3334% - 3 карточки
+            // 34% - 50% - 2 карточки
+            // 51% - 100%;
+        }
+    }
+}
+@media (max-width: 873px) {
+    .services {
+        &__column {
+            flex: 0 1 44%;
+        }
+    }
+}
+@media (max-width: 684px) {
+    .services {
+        &__column {
+            flex: 0 1 72%;
+            padding: 40px;
+        }
+    }
+}
+@media (max-width: 505px) {
+    .services {
+        &__column {
+            flex: 0 1 80%;
+            padding: 35px;
+        }
+    }
+}
+@media (max-width: 419px) {
+    .services {
+        &__column {
+            flex: 0 1 95%;
+            padding: 35px;
         }
     }
 }

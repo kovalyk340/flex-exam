@@ -164,7 +164,6 @@ body {
 }
 
 .label {
-  display: inline-block;
   font-family: "Circular", sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -243,7 +242,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 33px 23px 0 9px;
+  padding: 95px 23px 0 8px;
 }
 
 .start__label {
@@ -272,7 +271,7 @@ body {
 }
 
 .start__text {
-  max-width: 537px;
+  width: 537px;
   margin-bottom: 42px;
 }
 
@@ -284,6 +283,42 @@ body {
 .start__button {
   width: 216px;
   height: 66px;
+}
+
+.start__button__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f78bb6;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.start__button__link::after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 32px;
+  background: url("./../img/exit.svg") 0 0/contain no-repeat;
+}
+
+.start__button__link:hover {
+  background-color: #fba9ca;
 }
 
 .start__image {
@@ -301,14 +336,47 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 400px;
             flex: 0 0 400px;
+    padding-right: 60px;
   }
   .start__heading {
-    max-width: 450px;
     font-size: 45px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 922px) {
+  .start__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 400px;
+            flex: 0 0 400px;
+    padding-top: 85px;
+  }
+  .start__heading {
+    font-size: 45px;
+  }
+  .start__body {
+    padding: 95px 5px;
+  }
+  .start__text {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 634px) {
+  .start__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 345px;
+            flex: 0 0 345px;
+  }
+  .start__heading {
+    font-size: 35px;
+  }
+  .start__text {
+    max-width: 255px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 568px) {
   .start__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -316,43 +384,56 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .start__heading {
-    margin: 0 auto 31px;
-  }
   .start__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 470px;
             flex: 0 0 470px;
+    margin-bottom: 30px;
+    padding: 0 30px;
   }
   .start__body {
-    padding: 0;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
   }
   .start__text {
-    margin: 0 auto 42px;
-  }
-  .start__button {
-    margin: 0 auto;
+    max-width: 400px;
+    font-size: 24px;
   }
 }
 
-@media (max-width: 550px) {
-  .start__heading {
-    font-size: 35px;
+@media (max-width: 375px) {
+  .start__title {
+    text-align: center;
+    padding-left: 5px;
+    position: relative;
   }
-  .start__text {
-    text-align: justify;
+  .start__title::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 3px;
+    background: url("./../img/underline.svg") 0 0/contain no-repeat;
+    left: 12%;
+    top: 20px;
+  }
+  .start__heading {
+    text-align: center;
   }
   .start__image {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+        -ms-flex: 0 0 440px;
+            flex: 0 0 440px;
+    margin-bottom: 30px;
+    padding: 0 30px;
   }
-}
-
-.header {
-  display: none;
+  .start__text {
+    max-width: 380px;
+    padding-left: 5%;
+    font-size: 24px;
+  }
+  .start__wrap-button {
+    margin: 0 auto;
+  }
 }
 
 .header__row {
@@ -505,8 +586,6 @@ body {
   height: 100%;
   background: #fff1f9;
   border-radius: 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .services__item::after {
@@ -516,7 +595,7 @@ body {
   left: 0;
   width: 100%;
   height: 0px;
-  background-color: #fff1f9;
+  background-color: #ffa89a;
   border-radius: 0 0 8px 8px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;

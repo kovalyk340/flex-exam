@@ -5,7 +5,7 @@
 
   &__body {
     flex: 1 1 auto;
-    padding: 95px 23px 0 8px;
+    padding: 33px 23px 0 9px;
   }
 
   &__label {
@@ -38,7 +38,7 @@
   }
 
   &__text {
-    width: 537px;
+    max-width: 537px;
     margin-bottom: 42px;
   }
 
@@ -48,7 +48,48 @@
   }
 
   &__button {
+    width: 216px;
+    height: 66px;
+
+    a {
+      // Отличительные стили
+    }
   }
+
+  // &__link {
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   padding-right: 62px;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: #f78bb6;
+  //   border-radius: 4px;
+
+  //   font-weight: 500;
+  //   font-size: 20px;
+  //   line-height: 150%;
+  //   color: #ffffff;
+  //   letter-spacing: 0.02em;
+
+  //   transition: all 0.3s ease 0s;
+
+  //   &::after {
+  //     content: "";
+
+  //     position: absolute;
+
+  //     width: 43px;
+  //     height: 32px;
+  //     background: url("./../img/exit.svg") 0 0 / contain no-repeat;
+  //   }
+
+  //   &:hover {
+  //     background-color: #fba9ca;
+  //   }
+  // }
   &__image {
     flex: 0 0 532px;
     img {
@@ -60,101 +101,49 @@
   .start {
     &__image {
       flex: 0 0 400px;
-      padding-right: 60px;
     }
     &__heading {
+      max-width: 450px;
       font-size: 45px;
     }
   }
 }
-@media (max-width: 922px) {
-  .start {
-    &__image {
-      flex: 0 0 400px;
-      padding-top: 85px;
-    }
-    &__heading {
-      font-size: 45px;
-    }
-    &__body {
-      padding: 95px 5px;
-    }
-    &__text {
-      max-width: 350px;
-    }
-  }
-}
-@media (max-width: 634px) {
-  .start {
-    &__image {
-      flex: 0 0 345px;
-    }
-    &__heading {
-      font-size: 35px;
-    }
-    &__text {
-      max-width: 255px;
-      font-size: 17px;
-    }
-  }
-}
-@media (max-width: 568px) {
+
+@media (max-width: 1023px) {
   .start {
     &__row {
       flex-wrap: wrap;
       justify-content: center;
     }
+    &__heading {
+      margin: 0 auto 31px;
+    }
     &__image {
       flex: 0 0 470px;
-      margin-bottom: 30px;
-      padding: 0 30px;
     }
     &__body {
+      padding: 0;
       margin-bottom: 20px;
-      text-align: left;
+      text-align: center;
     }
-
     &__text {
-      max-width: 400px;
-      font-size: 24px;
+      margin: 0 auto 42px;
+    }
+    &__button {
+      margin: 0 auto;
     }
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .start {
-    &__title {
-      text-align: center;
-      padding-left: 5px;
-      position: relative;
-      &::before {
-        position: absolute;
-        content: "";
-
-        width: 36px;
-        height: 3px;
-        background: url("./../img/underline.svg") 0 0 / contain no-repeat;
-
-        left: 12%;
-        top: 20px;
-      }
-    }
-
     &__heading {
-      text-align: center;
+      font-size: 35px;
+    }
+    &__text {
+      text-align: justify;
     }
     &__image {
-      flex: 0 0 440px;
-      margin-bottom: 30px;
-      padding: 0 30px;
-    }
-
-    &__text {
-      max-width: 380px;
-      padding-left: 5%;
-      font-size: 24px;
-    }
-    &__wrap-button {
-      margin: 0 auto;
+      flex: 0 1 100%;
     }
   }
 }

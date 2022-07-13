@@ -187,7 +187,6 @@ body {
 
 .button__link {
   position: relative;
-  padding: 14px 14px 14px 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,11 +213,9 @@ body {
 .button__link::after {
   content: "";
   position: absolute;
-  right: 14px;
-  top: 15px;
   width: 38px;
   height: 28px;
-  background: url("./../img/new-exit.svg") 0 0/contain no-repeat;
+  background: url("./../img/exit.svg") 0 0/contain no-repeat;
 }
 
 .button__link:hover {
@@ -284,6 +281,13 @@ body {
 .start__button {
   width: 216px;
   height: 66px;
+}
+
+.start__button a::after {
+  width: 42px;
+  height: 32px;
+  left: 150px;
+  top: 17px;
 }
 
 .start__image {

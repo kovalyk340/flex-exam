@@ -50,15 +50,24 @@
   &__button {
     width: 216px;
     height: 66px;
+    span {
+      position: relative;
+      padding-right: 62px;
 
+      &::after {
+        content: "";
+
+        position: absolute;
+
+        width: 43px;
+        height: 32px;
+        background: url("./../img/exit.svg") 0 0 / contain no-repeat;
+        right: 0;
+        bottom: 0;
+      }
+    }
     a {
       // Отличительные стили
-      &::after {
-        width: 42px;
-        height: 32px;
-        left: 150px;
-        top: 17px;
-      }
     }
   }
 

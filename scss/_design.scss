@@ -1,26 +1,37 @@
-.page {
-    &__design {
-    }
-}
 .design {
     &__row {
+        display: flex;
     }
 
     &__image {
+        flex: 0 0 570px;
+        padding-top: 50px; //проблема с отступом
+        img {
+            max-width: 100%;
+        }
     }
 
     &__body {
+        flex: 1 1 auto;
+        padding: 20px 31px 0px 79px;
     }
 
     &__label {
+        margin-bottom: 15px;
     }
 
     &__subheading {
+        margin-bottom: 24px;
     }
 
     &__text {
+        margin-bottom: 40px;
     }
 
     &__button {
+        span {
+            position: relative;
+            padding-right: 55px;
+        }
     }
 }

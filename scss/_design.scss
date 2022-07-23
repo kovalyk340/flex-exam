@@ -25,6 +25,7 @@
     }
 
     &__text {
+        max-width: 500px;
         margin-bottom: 40px;
     }
 
@@ -32,6 +33,67 @@
         span {
             position: relative;
             padding-right: 55px;
+        }
+    }
+}
+@media (max-width: 1110px) {
+    .design {
+        &__image {
+            flex: 0 0 400px;
+        }
+        &__subheading {
+            max-width: 450px;
+            font-size: 45px;
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .design {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__subheading {
+            margin: 0 auto 24px;
+        }
+        &__image {
+            flex: 0 0 470px;
+        }
+        &__body {
+            padding: 0;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        &__text {
+            margin: 0 auto 40px;
+            text-align: center;
+            font-size: 19px; //изменил на 1 пиксель чтобы 1 слово не переносилось на следующую строку
+        }
+        &__button {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .design {
+        &__subheading {
+            font-size: 35px;
+        }
+        &__text {
+            text-align: justify;
+        }
+        &__image {
+            flex: 0 1 100%;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .design {
+        &__subheading {
+            font-size: 30px;
+        }
+        &__title {
+            font-size: 25px;
         }
     }
 }

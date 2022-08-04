@@ -1,0 +1,35 @@
+.teamwork {
+    &__row {
+        display: flex;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 76px 75px 0 23px;
+    }
+
+    &__label {
+        margin-bottom: 15px;
+    }
+
+    &__subheading {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        span {
+            padding-right: 58px;
+        }
+    }
+
+    &__image {
+        flex: 0 0 587px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
